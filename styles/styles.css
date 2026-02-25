@@ -1,0 +1,22 @@
+.name{
+    margin-top: 4vh;
+}
+
+header .nav-pills .nav-link.active{
+    background-color: black;
+}
+
+header .nav-pills .nav-link{
+    color: black;
+}
+
+footer .contact{
+    
+    
+    padding: 2vh;
+   
+}
+
+footer{
+    margin-top: 5vh;
+}

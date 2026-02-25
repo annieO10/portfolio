@@ -1,0 +1,12 @@
+.img-small{
+    max-width: 250;
+    object-fit: cover;
+    
+}
+
+ .custum-container{
+    padding: 5vh;
+    padding-right: 5vh;
+    border-color: rgb(192, 189, 189);
+    border-style:double;
+}
