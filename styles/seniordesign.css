@@ -1,0 +1,11 @@
+section h3{
+    font-size: 20px;
+}
+p{
+    text-indent: 40px;
+}
+.container{
+    border-color: rgb(192, 189, 189);
+    border-style:double;
+    padding: 20px;
+}

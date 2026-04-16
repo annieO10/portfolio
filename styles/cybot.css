@@ -1,0 +1,24 @@
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.code-box {
+  width: 100%;
+  background: #1e1e1e;
+  color: #ddd;
+  padding: 15px;
+  font-family: monospace;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;  
+  align-items: flex-start;
+  gap: 20px;    
+  border-color: rgb(192, 189, 189);
+  border-style:double;
+  padding: 20px;        
+}

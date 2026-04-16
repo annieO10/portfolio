@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code for semi-autonomous vehicle</title>
+    <script src="./cybot.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/cybot.css">
+</head>
+<body>
+    <header class="d-flex justify-content-center flex-column align-items-center"> 
+        <section>
+            <h1 class="name">Annie O'Connor</h1>
+        </section>
+        
+        <section class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills"> 
+                <li class="nav-item">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li> 
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./SeniorDesign.html" class="nav-link">Senoir Design Project</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link active">Projects</a></li> 
+                    <li class="nav-item"><a href="./resume.html" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="./reflections.html" class="nav-link">Reflections</a></li>
+                    
+            </ul> 
+        </section>
+        
+    </header>
+    <div class="container">
+        <div class="right-panel">
+            <button class="file-btn" onclick="showFile('files/adc.c', this)">adc.c</button>
+            <button class="file-btn" onclick="showFile('files/adc.h', this)">adc.h</button>
+            <button class="file-btn" onclick="showFile('files/button.c', this)">button.c</button>
+            <button class="file-btn" onclick="showFile('files/button.h', this)">button.h</button>
+            <button class="file-btn" onclick="showFile('files/cyBot_Scan.h', this)">cyBot_Scan.h</button>
+            <button class="file-btn" onclick="showFile('files/cyBot_uart.h', this)">cyBot_uart.h</button>
+            <button class="file-btn" onclick="showFile('files/lcd.c', this)">ldc.c</button>
+            <button class="file-btn" onclick="showFile('files/lcd.h', this)">ldc.h</button>
+            <button class="file-btn" onclick="showFile('files/main.c', this)">main.c</button>
+            <button class="file-btn" onclick="showFile('files/movement.c', this)">movement.c</button>
+            <button class="file-btn" onclick="showFile('files/movement.h', this)">movement.h</button>
+            <button class="file-btn" onclick="showFile('files/obj_detection.c', this)">obj_detection.c</button>
+            <button class="file-btn" onclick="showFile('files/obj_detection.h', this)">obj_detection.h</button>
+            <button class="file-btn" onclick="showFile('files/open_interface.c', this)">open_interface.c</button>
+            <button class="file-btn" onclick="showFile('files/open_interface.h', this)">open_interface.h</button>
+            <button class="file-btn" onclick="showFile('files/ping.c', this)">ping.c</button>
+            <button class="file-btn" onclick="showFile('files/ping.h', this)">ping.h</button>
+            <button class="file-btn" onclick="showFile('files/servo.c', this)">servo.c</button>
+            <button class="file-btn" onclick="showFile('files/servo.h', this)">servo.h</button>
+            <button class="file-btn" onclick="showFile('files/Timer.c', this)">Timer.c</button>
+            <button class="file-btn" onclick="showFile('files/Timer.h', this)">Timer.h</button>
+            <button class="file-btn" onclick="showFile('files/uart-interrupt.c', this)">uart-interrupt.c</button>
+            <button class="file-btn" onclick="showFile('files/uart-interrupt.h', this)">uart-interrupt.h</button>
+            <button class="file-btn" onclick="showFile('files/uart.c', this)">uart.c</button>
+            <button class="file-btn" onclick="showFile('files/uart.h', this)">uart.h</button>
+        </div>
+        
+        <div class="code-box">
+            <pre id="code">Click Buttons To View Code</pre>
+        </div>
+    </div>
+
+    <footer>
+        <div class="d-flex justify-content-between align-items-center px-4">
+            <div class="contact">
+                <h5>Contact Information</h5>
+                    <div class="d-flex flex-column gap-0">
+                        <p class="m-0">Annie O'Connor</p>
+                        <p class="m-0">Junior in Computer Engineering</p>
+                        <p class="m-0">Iowa State University</p>
+                        <p class="m-0">annieo10@iastate.edu</p>
+                        <p class="m-0">annieom7@gmail.com</p>
+                    </div>
+                        
+            </div>   
+            <div>
+                <img
+                    src="icons/symbol.png"
+                    alt="Symbol icon"
+                    width="150vh"
+                    height="150vh"
+                >
+            </div>
+        </div>
+            
+        
+        <div class="d-flex border-top">
+            <p >&copy; 2026 Annie O'Connor All rights reserved.</p>
+         </div>
+    </footer>
+    
+</body>
+</html>

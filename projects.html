@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
      <link rel="stylesheet" href="./styles/styles.css">
+     <link rel="stylesheet" href="./styles/projects.css">
 </head>
 <body>
     <header class="d-flex justify-content-center flex-column align-items-center"> 
@@ -29,39 +30,88 @@
         </section>
         
     </header>
-    <div class="text-center">
+    <div class="text-center container">
         <section class="border p-4">
             <h2>
                 Project 1: Pipelined MIPS CPU
             </h2>
-            <p>Description</p>
-            <h3>Role</h3>
-            <p>Role description</p>
+            <p>For this project I worked with a partner to design a five-stage pipelined MIPS processor in VHDL. 
+                The top-level structure connects these components: program counter, instruction memory, register file, control unit, ALU control logic, ALU, data memory, and pipeline registers. 
+                Throughout an entire semester we to design these components and connect them together to support MIPS instrctuions including: R-type arithmetic and logic instructions, branches, jumps, and memory operations. An instruction-load mode allows instructions to be written into the instruction memory for simulation and testing. Instruction fetch logic computes PC+4 and supports branch and jump target calculation. Control unit gives signals from the opcode and function fields. The ALU carries out arithmetic, logic, and shift operations and supports branch logic. Memory completes read and write operations and updates register file accordlingly. 
+            </p>
+            <h3>Role and Experience</h3>
+            <p>Design of the components was split between me and my partner. I completed the entiriety of the code linked below for the top-level structure of MIPS processor. A lot of the time I spent on this project was debugging this file, 
+                and making sure every single instruction worked. I went through each instruction in order and tested them for various end cases. The hardest part was finding the source of an error. I would sometimes have to read the waveforms of the inputs and outputs of every single component to find the problem. We first made a single cycle MIPS processor, but later I had redesign code to support Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write Back stages. 
+                Working on the top-level structure helped me have a more complete understanding of how a MIPS processor works. I needed to understand the path of each instruction through the processor, and determine the expected output for each component. 
+            </p>
             <h3>Top-level VHDL code for pipelined MIPS CPU</h3>
-            <p>Since vhd files can be difficult to open here the top level structure for my MIPS project. It shows connections between differant components in our MIPS processor. </p>
-            <a href="./mips.html">MIPS Project</a>
+            <p>Since vhd files can be difficult to open here is the top level structure for my MIPS project. It shows connections between differant components in our MIPS processor. <br>
+                <a href="./mips.html">MIPS Project</a>
+            </p>
+           
             
         </section>
-        <section>
+        <section class="border p-4">
             <h2>
-                Project 2
+                Project 2: Pdf Renderer
             </h2>
-            <p>Description</p>
-            <h3>Role</h3>
-            <p>Role description</p>
+            <p>I wanted to be able to display books I have downloaded as pdfs in a more readable way. This site takes a pdf file uploaded by a user, and stores in a cloud storage service. On the homepage, I get each pdf file in storage and render the cover. Clicking on a cover will render the book for the user. Two pages are placed side by side and can be navigated through table of context or the navigation bar. </p>
+            <h3>Role and Experience</h3>
+            <p>I completed the entierity of the code as a personal project. I used PDF.js library to render each pdf to appear more like an open book. I used Render and CloudfareR2 for the backend and storage system. I needed to learn how to set up and use cloud object storage, and how to create a server to handle requests for retrieving files from cloud storage. I am continuing to develop the style of the page and increase the readability of the pdfs. </p>
             <h3>Project Runthrough</h3>
-            <p>exmaple</p>
+            <p> Here is the link for the website. I only used services I could get for free which means it will take a minute for things to load. <br>
+                <a href="https://annieo10.github.io/BookApp/">Pdf Renderer</a> <br>
+                Here are links to the frontend and backend code for the site posted on github. <br>
+                <a href="https://github.com/annieO10/BookApp">Frontend</a>  <a href="https://github.com/annieO10/library-api">Backend</a>
+            </p>
             
         </section>
-        <section>
+        <section class="border p-4">
             <h2>
-                Project 3
+                Project 3: Semi-autonomous vehicle 
             </h2>
-            <p>Description</p>
-            <h3>Role</h3>
-            <p>Role description</p>
+            <img src="./images/cy_bot.jpg">
+            <p>Programed and designed functions on microcontroller to make semi-autonomous vehicle that can navigate obstacles, detect edges or drops, and arrive at certain location. Our device was iRobot Roomba that had a Tiva_TM4C123GH6PM processor and a ARM Cortex M4 based microcontroller. 
+                For our final project we needed to navigate robot through obstacles using data from on-board sensor to desired location. We were unable to see robots location or field so could only use data from PING and IR sensor to detect and avoid objects. 
+                We operated robot over Wifi using Putty and developed GUI to interpret sensor data and pinpoint objects on map. 
+            </p>
+            <h3>Role and Experience</h3>
+            <p>
+            Throughout this project, I collaborated with a partner to develop embedded C modules for a semi-autonomous system, including LCD text display, motion control, timer management, button input handling, UART communication, interrupt handling, and sensor integration. I contributed primarily to implementing and refining PING sensor data processing for accurate object detection. 
+
+            In the final phase, our team expanded to four members and developed a graphical user interface (GUI) to present sensor data in a more user-friendly format. The GUI enabled real-time field scanning, object localization, and remote command input for navigation. 
+
+            I was responsible for debugging and improving object detection accuracy to ensure reliable and efficient navigation through the course. Additionally, I implemented functionality for the CyBot to play a song upon reaching its destination. 
+
+            During the final demonstration, our system successfully avoided obstacles and autonomously navigated to the target location.
+            </p>
             <h3>Project Runthrough</h3>
-            <p>exmaple</p>
+            <p>Here are some videos I took when we were developing Cybot. </p>
+            <div class="wide">
+                <h4>Taken during initial development. Demonstration of Cybot's movements. </h4>
+                <video controls src="videos/bot_moving.mp4"></video>
+            </div>
+            
+           <div class="video-container">
+                <div>
+                    <h4>First thing I coded on robot. Using LCD to display text. </h4>
+                    <video controls src="videos/text.mp4"></video>
+                </div>
+                <div>
+                    <h4>Video taken when we were trying to avoid objects soley through bumpers. </h4>
+                    <video controls src="videos/avoid_objects.mp4"></video>
+                </div>
+                <div>
+                    <h4>Demo of song that played when Cybot reached its destination. </h4>
+                    <video controls src="videos/song.mp4"></video>
+                </div>
+           </div>
+
+           <div class="code-link-container">
+            <h3>Here is a link to some code implemented in our final demo.</h4>
+            <a href="./cybot.html">Cybot Code</a>
+           </div>
+           
             
         </section>
     </div>
@@ -73,7 +123,7 @@
                 <h5>Contact Information</h5>
                     <div class="d-flex flex-column gap-0">
                         <p class="m-0">Annie O'Connor</p>
-                        <p class="m-0">Computer Engineering Junior</p>
+                        <p class="m-0">Junior in Computer Engineering</p>
                         <p class="m-0">Iowa State University</p>
                         <p class="m-0">annieo10@iastate.edu</p>
                         <p class="m-0">annieom7@gmail.com</p>

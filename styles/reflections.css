@@ -1,0 +1,6 @@
+#first-top{
+    border-top: 3px double rgba(0, 0, 0, 0.17);
+}
+#last-bottom{
+    border-bottom: 3px double rgba(0, 0, 0, 0.221);
+}
